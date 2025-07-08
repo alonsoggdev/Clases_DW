@@ -59,3 +59,8 @@ header > ul {
     border-radius: 1rem;
     margin-top: 0.5rem;
 }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
