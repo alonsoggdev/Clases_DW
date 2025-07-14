@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+
+p, h1, h2, h3, h4, a {
+    color: white;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero > img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 2rem;
+}
+
+.overlay > h1 {
+    text-align: center;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem 2rem;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.offcanvas {
+    position: absolute;
+    top: 0;
+    left: -200px;
+    height: 100vh;
+    width: 200px;
+    z-index: 100;
+    background-color: white;
+    transition: transform 0.3s;
+}
+
+.offcanvas.active {
+    transform: translateX(100%);
+}
+
+.offcanvas-trigger {
+    padding: 1rem;
+}
